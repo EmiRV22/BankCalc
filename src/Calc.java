@@ -9,5 +9,8 @@ public class Calc {
         System.out.println("\nNombre del cliente: " + nombre);
         System.out.println("El tipo de cuenta es:" + tipoCuenta);
         System.out.println("Su saldo disponible es:$ " + saldo);
+
+        System.out.println("**************");
+
     }
 }
