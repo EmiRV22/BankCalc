@@ -37,7 +37,7 @@ public class Calc {
                 case 2:
                     System.out.println("Cantidad de retiro");
                     double valorRetirar = teclado.nextDouble();
-                    if (saldo > valorRetirar) {
+                    if (saldo < valorRetirar) {
                         System.out.println("Saldo insuficiente");
                     }
                     else{
@@ -46,12 +46,16 @@ public class Calc {
                         }break;
 
                 case 3:
+                    System.out.println("Saldo que deaeas depositar");
+                    double valorDeposito = teclado.nextDouble();
+                    saldo += valorDeposito;
+                    System.out.println("Su saldo es: " + saldo);
+                    break;
+                case 9:
+                    System.out.println("Gracias por utilizar el servicio");
+                default:
+                    System.out.println("Opcion no valida");
                     }
-
-
-
-
-
 
             }
         }
